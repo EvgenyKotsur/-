@@ -1,0 +1,33 @@
+﻿<Window x:Class="ZhekaKotsur.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZhekaKotsur"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="455" Width="1076">
+    <Grid Margin="0,0,10,8">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="searchTextBox" HorizontalAlignment="Left" Margin="592,10,0,0" TextWrapping="Wrap" Text="введите параметры" VerticalAlignment="Top" Width="257" Height="32" TextChanged="TextBox_TextChanged"/>
+        <Button Content="найти" HorizontalAlignment="Left" Margin="854,11,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.235,1.297" Height="31" Width="81" Click="SearchButton_Click"/>
+        <ListBox x:Name="resultsListBox" Margin="10,10,479,10">
+
+        </ListBox>
+        <Button x:Name="butAdd" Content="добавить" HorizontalAlignment="Left" Margin="975,50,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.235,1.297" Height="32" Width="81" Click="butAdd_Click"/>
+        <Button x:Name="butDel" Content="удалить" HorizontalAlignment="Left" Margin="975,91,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.235,1.297" Height="32" Width="81" Click="butDel_Click"/>
+        <TextBox x:Name="deviceBox" HorizontalAlignment="Left" Margin="683,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" Height="24" TextChanged="deviceBox_TextChanged"/>
+        <TextBox x:Name="reasonBox" HorizontalAlignment="Left" Margin="683,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" Height="24" RenderTransformOrigin="2.693,-8.49"/>
+        <TextBox x:Name="bNameBox" HorizontalAlignment="Left" Margin="688,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" Height="24"/>
+        <TextBox x:Name="statusBox" HorizontalAlignment="Left" Margin="668,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" Height="24"/>
+        <Button x:Name="butEdit" Content="изменить" HorizontalAlignment="Left" Margin="975,11,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.235,1.297" Height="32" Width="81" Click="butEdit_Click"/>
+        <TextBlock x:Name="deviceD" HorizontalAlignment="Left" Margin="592,47,0,0" TextWrapping="Wrap" Text="устройство:" VerticalAlignment="Top" Height="16" Width="91"/>
+        <TextBlock x:Name="reasonD" HorizontalAlignment="Left" Margin="592,88,0,0" TextWrapping="Wrap" Text="причина:" VerticalAlignment="Top" Height="16" Width="91"/>
+        <TextBlock x:Name="fioD" HorizontalAlignment="Left" Margin="591,128,0,0" TextWrapping="Wrap" Text="фио(заказчика):" VerticalAlignment="Top" Height="16" Width="92"/>
+        <TextBlock x:Name="statusD" HorizontalAlignment="Left" Margin="592,167,0,0" TextWrapping="Wrap" Text="статус:" VerticalAlignment="Top" Height="16" Width="49"/>
+
+    </Grid>
+</Window>
